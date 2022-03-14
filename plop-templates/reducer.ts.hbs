@@ -1,4 +1,4 @@
-import { {{pascalCase name}}Action } from './{{pascalCase name}}ActionTypes'
+import { {{pascalCase name}}Action, {{pascalCase name}}ActionTypes } from './{{pascalCase name}}ActionTypes'
 
 export interface {{pascalCase name}}State {
 
@@ -10,7 +10,7 @@ export const {{camelCase name}}InitialState:{{pascalCase name}}State = {
 
 const {{camelCase name}}Reducer = (state:{{pascalCase name}}State,action:{{pascalCase name}}Action) => {
   switch(action.type){ 
-    // -- Append cases
+    //--AppendCase
     default: return state; 
   } 
 } 
