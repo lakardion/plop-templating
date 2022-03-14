@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   description: "Create a slice of state for a store",
   prompts: [
     {

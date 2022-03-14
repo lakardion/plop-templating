@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   description: "Create typed function component",
   prompts: [
     {

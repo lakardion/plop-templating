@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   description: "Add an action to an existing store",
   prompts: [
     {
