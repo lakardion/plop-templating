@@ -1,0 +1,9 @@
+| {
+  type:{{pascalCase actionName}}ActionType.{{uppercase name}},
+  payload:{ 
+    {{#each payload}}
+      {{camelCase this.name}}:{{pascalCase this.type}}
+    {{/each}}
+  }
+}
+// --Append--

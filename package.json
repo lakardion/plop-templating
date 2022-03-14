@@ -1,0 +1,18 @@
+{
+  "name": "plop-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "plop": "plop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "plop": "^3.0.5",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
