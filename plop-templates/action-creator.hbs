@@ -1,0 +1,4 @@
+export const {{camelCase name}} = ({{#if payloadName}}{{camelCase payloadName}}: {{camelCase payloadType}}{{/if}}): {{pascalCase store}}Action => ({
+    type: {{pascalCase store}}ActionTypes.{{constantCase name}},{{#if payloadName}} payload: { {{camelCase payloadName}} } {{/if}}
+  }) 
+//--AppendCreator

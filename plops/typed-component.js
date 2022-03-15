@@ -3,14 +3,14 @@ module.exports = {
   prompts: [
     {
       type: "input",
-      name: "relativePath",
-      message: "Relative path",
-      default: ".",
+      name: "name",
+      message: "Component name",
     },
     {
       type: "input",
-      name: "name",
-      message: "Component name",
+      name: "relativePath",
+      message: "Relative path",
+      default: ".",
     },
   ],
   actions: [

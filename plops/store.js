@@ -3,14 +3,14 @@ module.exports = {
   prompts: [
     {
       type: "input",
-      name: "relativePath",
-      message: "Relative path",
-      default: ".",
+      name: "name",
+      message: "Slice name",
     },
     {
       type: "input",
-      name: "name",
-      message: "Slice name",
+      name: "relativePath",
+      message: "Relative path",
+      default: ".",
     },
   ],
   actions: [
@@ -27,6 +27,7 @@ module.exports = {
     {
       type: "add",
       path: "{{relativePath}}/{{pascalCase name}}/{{camelCase name}}ActionCreators.ts",
+      templateFile: "plop-templates/action-creators.ts.hbs",
     },
     {
       type: "add",

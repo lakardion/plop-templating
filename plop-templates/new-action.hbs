@@ -1,6 +1,8 @@
 | {
   type:{{pascalCase store}}ActionTypes.{{constantCase name}},
+  {{#if payloadName}}
   payload:{ 
-      {{camelCase payloadName}}:{{pascalCase payloadType}}
+      {{camelCase payloadName}}:{{payloadType}}
   }
+  {{/if}}
 }/**--AppendAction */;
