@@ -1,0 +1,75 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "npm",
+      "problemMatcher": [],
+      "label": "typed-component",
+      "detail": "plop",
+      "args": [
+        "run",
+        "plop",
+        "typed-component",
+        "${input:componentName}",
+        "${relativeFileDirname}"
+      ]
+    },
+    {
+      "type": "shell",
+      "command": "npm",
+      "label": "create-store",
+      "detail": "plop create-store",
+      "args": [
+        "run",
+        "plop",
+        "store",
+        "${input:store}",
+        "${relativeFileDirname}"
+      ]
+    },
+    {
+      "type": "shell",
+      "command": "npm",
+      "label": "add-action",
+      "detail": "plop add-action",
+      "args": [
+        "run",
+        "plop",
+        "add-action",
+        "${input:actionName}",
+        "${input:store}",
+        "${input:payloadName}",
+        "${input:payloadType}",
+        "${relativeFileDirname}"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "componentName",
+      "description": "Give a name to your component"
+    },
+    {
+      "type": "promptString",
+      "id": "store",
+      "description": "Name of the store to create/modify"
+    },
+    {
+      "type": "promptString",
+      "id": "actionName",
+      "description": "Give a name to your new action"
+    },
+    {
+      "type": "promptString",
+      "id": "payloadName",
+      "description": "Give a name to the payload"
+    },
+    {
+      "type": "promptString",
+      "id": "payloadType",
+      "description": "What type is the payload"
+    }
+  ]
+}
